@@ -1,4 +1,5 @@
 public class Linkedlist {
+    //creation of a class to create the nodes
     public static class Node {
         int val;
         Node next;
@@ -6,6 +7,7 @@ public class Linkedlist {
             this.val=val;
         }
     }
+    //method to display the linked list
     public static void display(Node head) {
         if(head==null) return;
         Node temp=head;
@@ -15,6 +17,7 @@ public class Linkedlist {
         }
         System.out.println();
     }
+    //method to remove duplicate nodes in a linked list
     public static Node removeDuplicates(Node head) {
         if(head==null || head.next==null) return head;
         Node temp=head;
